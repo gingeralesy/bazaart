@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bazaart</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+          rel="stylesheet" crossorigin="anonymous"
+          integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.1/css/uikit.almost-flat.min.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/theme.css"
+          @href="/static/bazaart/css/theme.css" />
+  </head>
+  <body class="bazaart">
+    <c:splice lquery="(page-template :fragment/header)"/>
+    Hello, welcome to Bazaart.
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.1/js/uikit.min.js"></script>
+  </body>
+</html>
+

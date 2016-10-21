@@ -1,0 +1,45 @@
+<nav class="uk-navbar bz-p-horizontal--medium">
+  <a href="javascript:void(0);" class="uk-navbar-brand">
+    Bazaart
+  </a>
+  <ul class="uk-navbar-nav">
+    <li class="uk-active">
+      <a href="javascript:void(0);">Home</a>
+    </li>
+    <li>
+      <a href="javascript:void(0);">Featured</a>
+    </li>
+  </ul>
+
+  <div class="uk-navbar-flip">
+    <ul class="uk-navbar-nav">
+      <li class="uk-parent" data-uk-dropdown='{"mode":"hover"}'>
+        <a href="javascript:void(0);">Username Here</a>
+        <div class="uk-dropdown uk-dropdown-navbar"
+             aria-hidden="true" tabindex="">
+          <ul class="uk-nav uk-nav-navbar">
+            <li class="uk-nav-header">
+              Username Here
+            </li>
+            <li class="uk-nav-divider"></li>
+            <li>
+              <a href="javascript:void(0);">My Shop</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">Settings</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="uk-navbar-content uk-navbar-center uk-hidden-small">
+    <form class="uk-form uk-margin-remove uk-display-inline-block">
+      <input type="text" placeholder="Search"/>
+      <button type="button" class="uk-icon-button">
+        <span class="uk-icon-search"></span>
+      </button>
+    </form>
+  </div>
+</nav>
