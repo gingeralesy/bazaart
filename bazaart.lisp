@@ -4,8 +4,6 @@
   (:domain "bazaart"))
 (in-package #:bazaart)
 
-(radiance:remove-uri-dispatcher 'radiance::welcome)
-
 (lquery:define-lquery-function page-template (node object)
   "Adds content from a different template."
   (setf (plump:children node) (plump:make-child-array))
