@@ -1,8 +1,11 @@
 (in-package #:rad-user)
 (define-module #:bazaart
   (:use #:cl #:radiance #:r-clip)
-  (:domain "bazaart"))
+  (:domain "www.bazaart.net"))
 (in-package #:bazaart)
+
+(define-route https :reversal (uri)
+  (setf (port uri) 443))
 
 (lquery:define-lquery-function page-template (node object)
   "Adds content from a different template."
