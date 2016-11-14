@@ -1,435 +1,449 @@
+;; Box
+
+(.bz-box
+ :background-clip "padding-box"
+ :border "1px solid"
+ :border-radius "0.25rem"
+ :padding "1rem")
+
+(.bz-box--border
+ :background-clip "padding-box"
+ :border "1px solid"
+ :border-radius "0.25rem"
+ :padding 0)
+
 ;; Padding
 
 ;; none
 (.bz-p-left--none
-    :padding-left "0!important")
+ :padding-left "0!important")
 
 (.bz-p-right--none
-    :padding-right "0!important")
+ :padding-right "0!important")
 
 (.bz-p-horizontal--none
-    :padding-left "0!important"
-    :padding-right "0!important")
-    
+ :padding-left "0!important"
+ :padding-right "0!important")
+
 (.bz-p-top--none
-    :padding-top "0!important")
+ :padding-top "0!important")
 
 (.bz-p-bottom--none
-    :padding-bottom "0!important")
+ :padding-bottom "0!important")
 
 (.bz-p-vertical--none
-    :padding-top "0!important"
-    :padding-bottom "0!important")
+ :padding-top "0!important"
+ :padding-bottom "0!important")
 
 (.bz-p-around--none
-    :padding "0!important")
+ :padding "0!important")
 
 ;; xxx-small
 (.bz-p-left--xxx-small
-    :padding-left "0.125rem")
+ :padding-left "0.125rem")
 
 (.bz-p-right--xxx-small
-    :padding-right "0.125rem")
+ :padding-right "0.125rem")
 
 (.bz-p-horizontal--xxx-small
-    :padding-left "0.125rem"
-    :padding-right "0.125rem")
-    
+ :padding-left "0.125rem"
+ :padding-right "0.125rem")
+
 (.bz-p-top--xxx-small
-    :padding-top "0.125rem")
+ :padding-top "0.125rem")
 
 (.bz-p-bottom--xxx-small
-    :padding-bottom "0.125rem")
+ :padding-bottom "0.125rem")
 
 (.bz-p-vertical--xxx-small
-    :padding-top "0.125rem"
-    :padding-bottom "0.125rem")
+ :padding-top "0.125rem"
+ :padding-bottom "0.125rem")
 
 (.bz-p-around--xxx-small
-    :padding "0.125rem")
+ :padding "0.125rem")
 
 ;; xx-small
 (.bz-p-left--xx-small
-    :padding-left "0.25rem")
+ :padding-left "0.25rem")
 
 (.bz-p-right--xx-small
-    :padding-right "0.25rem")
+ :padding-right "0.25rem")
 
 (.bz-p-horizontal--xx-small
-    :padding-left "0.25rem"
-    :padding-right "0.25rem")
-    
+ :padding-left "0.25rem"
+ :padding-right "0.25rem")
+
 (.bz-p-top--xx-small
-    :padding-top "0.25rem")
+ :padding-top "0.25rem")
 
 (.bz-p-bottom--xx-small
-    :padding-bottom "0.25rem")
+ :padding-bottom "0.25rem")
 
 (.bz-p-vertical--xx-small
-    :padding-top "0.25rem"
-    :padding-bottom "0.25rem")
+ :padding-top "0.25rem"
+ :padding-bottom "0.25rem")
 
 (.bz-p-around--xx-small
-    :padding "0.25rem")
+ :padding "0.25rem")
 
 ;; x-small
 (.bz-p-left--x-small
-    :padding-left "0.5rem")
+ :padding-left "0.5rem")
 
 (.bz-p-right--x-small
-    :padding-right "0.5rem")
+ :padding-right "0.5rem")
 
 (.bz-p-horizontal--x-small
-    :padding-left "0.5rem"
-    :padding-right "0.5rem")
-    
+ :padding-left "0.5rem"
+ :padding-right "0.5rem")
+
 (.bz-p-top--x-small
-    :padding-top "0.5rem")
+ :padding-top "0.5rem")
 
 (.bz-p-bottom--x-small
-    :padding-bottom "0.5rem")
+ :padding-bottom "0.5rem")
 
 (.bz-p-vertical--x-small
-    :padding-top "0.5rem"
-    :padding-bottom "0.5rem")
+ :padding-top "0.5rem"
+ :padding-bottom "0.5rem")
 
 (.bz-p-around--x-small
-    :padding "0.5rem")
+ :padding "0.5rem")
 
 ;; small
 (.bz-p-left--small
-    :padding-left "0.75rem")
+ :padding-left "0.75rem")
 
 (.bz-p-right--small
-    :padding-right "0.75rem")
+ :padding-right "0.75rem")
 
 (.bz-p-horizontal--small
-    :padding-left "0.75rem"
-    :padding-right "0.75rem")
-    
+ :padding-left "0.75rem"
+ :padding-right "0.75rem")
+
 (.bz-p-top--small
-    :padding-top "0.75rem")
+ :padding-top "0.75rem")
 
 (.bz-p-bottom--small
-    :padding-bottom "0.75rem")
+ :padding-bottom "0.75rem")
 
 (.bz-p-vertical--small
-    :padding-top "0.75rem"
-    :padding-bottom "0.75rem")
+ :padding-top "0.75rem"
+ :padding-bottom "0.75rem")
 
 (.bz-p-around--small
-    :padding "0.75rem")
-    
+ :padding "0.75rem")
+
 ;; medium
 (.bz-p-left--medium
-    :padding-left "1rem")
+ :padding-left "1rem")
 
 (.bz-p-right--medium
-    :padding-right "1rem")
+ :padding-right "1rem")
 
 (.bz-p-horizontal--medium
-    :padding-left "1rem"
-    :padding-right "1rem")
-    
+ :padding-left "1rem"
+ :padding-right "1rem")
+
 (.bz-p-top--medium
-    :padding-top "1rem")
+ :padding-top "1rem")
 
 (.bz-p-bottom--medium
-    :padding-bottom "1rem")
+ :padding-bottom "1rem")
 
 (.bz-p-vertical--medium
-    :padding-top "1rem"
-    :padding-bottom "1rem")
+ :padding-top "1rem"
+ :padding-bottom "1rem")
 
 (.bz-p-around--medium
-    :padding "1rem")
+ :padding "1rem")
 
 ;; large
 (.bz-p-left--large
-    :padding-left "1.5rem")
+ :padding-left "1.5rem")
 
 (.bz-p-right--large
-    :padding-right "1.5rem")
+ :padding-right "1.5rem")
 
 (.bz-p-horizontal--large
-    :padding-left "1.5rem"
-    :padding-right "1.5rem")
-    
+ :padding-left "1.5rem"
+ :padding-right "1.5rem")
+
 (.bz-p-top--large
-    :padding-top "1.5rem")
+ :padding-top "1.5rem")
 
 (.bz-p-bottom--large
-    :padding-bottom "1.5rem")
+ :padding-bottom "1.5rem")
 
 (.bz-p-vertical--large
-    :padding-top "1.5rem"
-    :padding-bottom "1.5rem")
+ :padding-top "1.5rem"
+ :padding-bottom "1.5rem")
 
 (.bz-p-around--large
-    :padding "1.5rem")
+ :padding "1.5rem")
 
 ;; x-large
 (.bz-p-left--x-large
-    :padding-left "2rem")
+ :padding-left "2rem")
 
 (.bz-p-right--x-large
-    :padding-right "2rem")
+ :padding-right "2rem")
 
 (.bz-p-horizontal--x-large
-    :padding-left "2rem"
-    :padding-right "2rem")
-    
+ :padding-left "2rem"
+ :padding-right "2rem")
+
 (.bz-p-top--x-large
-    :padding-top "2rem")
+ :padding-top "2rem")
 
 (.bz-p-bottom--x-large
-    :padding-bottom "2rem")
+ :padding-bottom "2rem")
 
 (.bz-p-vertical--x-large
-    :padding-top "2rem"
-    :padding-bottom "2rem")
+ :padding-top "2rem"
+ :padding-bottom "2rem")
 
 (.bz-p-around--x-large
-    :padding "2rem")
+ :padding "2rem")
 
 ;; xx-large
 (.bz-p-left--xx-large
-    :padding-left "3rem")
+ :padding-left "3rem")
 
 (.bz-p-right--xx-large
-    :padding-right "3rem")
+ :padding-right "3rem")
 
 (.bz-p-horizontal--xx-large
-    :padding-left "3rem"
-    :padding-right "3rem")
-    
+ :padding-left "3rem"
+ :padding-right "3rem")
+
 (.bz-p-top--xx-large
-    :padding-top "3rem")
+ :padding-top "3rem")
 
 (.bz-p-bottom--xx-large
-    :padding-bottom "3rem")
+ :padding-bottom "3rem")
 
 (.bz-p-vertical--xx-large
-    :padding-top "3rem"
-    :padding-bottom "3rem")
+ :padding-top "3rem"
+ :padding-bottom "3rem")
 
 (.bz-p-around--xx-large
-    :padding "3rem")
+ :padding "3rem")
 
 ;; Margin
 
 ;; none
 (.bz-m-left--none
-    :margin-left "0!important")
+ :margin-left "0!important")
 
 (.bz-m-right--none
-    :margin-right "0!important")
+ :margin-right "0!important")
 
 (.bz-m-horizontal--none
-    :margin-left "0!important"
-    :margin-right "0!important")
-    
+ :margin-left "0!important"
+ :margin-right "0!important")
+
 (.bz-m-top--none
-    :margin-top "0!important")
+ :margin-top "0!important")
 
 (.bz-m-bottom--none
-    :margin-bottom "0!important")
+ :margin-bottom "0!important")
 
 (.bz-m-vertical--none
-    :margin-top "0!important"
-    :margin-bottom "0!important")
+ :margin-top "0!important"
+ :margin-bottom "0!important")
 
 (.bz-m-around--none
-    :margin "0!important")
+ :margin "0!important")
 
 ;; xxx-small
 (.bz-m-left--xxx-small
-    :margin-left "0.125rem")
+ :margin-left "0.125rem")
 
 (.bz-m-right--xxx-small
-    :margin-right "0.125rem")
+ :margin-right "0.125rem")
 
 (.bz-m-horizontal--xxx-small
-    :margin-left "0.125rem"
-    :margin-right "0.125rem")
-    
+ :margin-left "0.125rem"
+ :margin-right "0.125rem")
+
 (.bz-m-top--xxx-small
-    :margin-top "0.125rem")
+ :margin-top "0.125rem")
 
 (.bz-m-bottom--xxx-small
-    :margin-bottom "0.125rem")
+ :margin-bottom "0.125rem")
 
 (.bz-m-vertical--xxx-small
-    :margin-top "0.125rem"
-    :margin-bottom "0.125rem")
+ :margin-top "0.125rem"
+ :margin-bottom "0.125rem")
 
 (.bz-m-around--xxx-small
-    :margin "0.125rem")
+ :margin "0.125rem")
 
 ;; xx-small
 (.bz-m-left--xx-small
-    :margin-left "0.25rem")
+ :margin-left "0.25rem")
 
 (.bz-m-right--xx-small
-    :margin-right "0.25rem")
+ :margin-right "0.25rem")
 
 (.bz-m-horizontal--xx-small
-    :margin-left "0.25rem"
-    :margin-right "0.25rem")
-    
+ :margin-left "0.25rem"
+ :margin-right "0.25rem")
+
 (.bz-m-top--xx-small
-    :margin-top "0.25rem")
+ :margin-top "0.25rem")
 
 (.bz-m-bottom--xx-small
-    :margin-bottom "0.25rem")
+ :margin-bottom "0.25rem")
 
 (.bz-m-vertical--xx-small
-    :margin-top "0.25rem"
-    :margin-bottom "0.25rem")
+ :margin-top "0.25rem"
+ :margin-bottom "0.25rem")
 
 (.bz-m-around--xx-small
-    :margin "0.25rem")
+ :margin "0.25rem")
 
 ;; x-small
 (.bz-m-left--x-small
-    :margin-left "0.5rem")
+ :margin-left "0.5rem")
 
 (.bz-m-right--x-small
-    :margin-right "0.5rem")
+ :margin-right "0.5rem")
 
 (.bz-m-horizontal--x-small
-    :margin-left "0.5rem"
-    :margin-right "0.5rem")
-    
+ :margin-left "0.5rem"
+ :margin-right "0.5rem")
+
 (.bz-m-top--x-small
-    :margin-top "0.5rem")
+ :margin-top "0.5rem")
 
 (.bz-m-bottom--x-small
-    :margin-bottom "0.5rem")
+ :margin-bottom "0.5rem")
 
 (.bz-m-vertical--x-small
-    :margin-top "0.5rem"
-    :margin-bottom "0.5rem")
+ :margin-top "0.5rem"
+ :margin-bottom "0.5rem")
 
 (.bz-m-around--x-small
-    :margin "0.5rem")
+ :margin "0.5rem")
 
 ;; small
 (.bz-m-left--small
-    :margin-left "0.75rem")
+ :margin-left "0.75rem")
 
 (.bz-m-right--small
-    :margin-right "0.75rem")
+ :margin-right "0.75rem")
 
 (.bz-m-horizontal--small
-    :margin-left "0.75rem"
-    :margin-right "0.75rem")
-    
+ :margin-left "0.75rem"
+ :margin-right "0.75rem")
+
 (.bz-m-top--small
-    :margin-top "0.75rem")
+ :margin-top "0.75rem")
 
 (.bz-m-bottom--small
-    :margin-bottom "0.75rem")
+ :margin-bottom "0.75rem")
 
 (.bz-m-vertical--small
-    :margin-top "0.75rem"
-    :margin-bottom "0.75rem")
+ :margin-top "0.75rem"
+ :margin-bottom "0.75rem")
 
 (.bz-m-around--small
-    :margin "0.75rem")
-    
+ :margin "0.75rem")
+
 ;; medium
 (.bz-m-left--medium
-    :margin-left "1rem")
+ :margin-left "1rem")
 
 (.bz-m-right--medium
-    :margin-right "1rem")
+ :margin-right "1rem")
 
 (.bz-m-horizontal--medium
-    :margin-left "1rem"
-    :margin-right "1rem")
-    
+ :margin-left "1rem"
+ :margin-right "1rem")
+
 (.bz-m-top--medium
-    :margin-top "1rem")
+ :margin-top "1rem")
 
 (.bz-m-bottom--medium
-    :margin-bottom "1rem")
+ :margin-bottom "1rem")
 
 (.bz-m-vertical--medium
-    :margin-top "1rem"
-    :margin-bottom "1rem")
+ :margin-top "1rem"
+ :margin-bottom "1rem")
 
 (.bz-m-around--medium
-    :margin "1rem")
+ :margin "1rem")
 
 ;; large
 (.bz-m-left--large
-    :margin-left "1.5rem")
+ :margin-left "1.5rem")
 
 (.bz-m-right--large
-    :margin-right "1.5rem")
+ :margin-right "1.5rem")
 
 (.bz-m-horizontal--large
-    :margin-left "1.5rem"
-    :margin-right "1.5rem")
-    
+ :margin-left "1.5rem"
+ :margin-right "1.5rem")
+
 (.bz-m-top--large
-    :margin-top "1.5rem")
+ :margin-top "1.5rem")
 
 (.bz-m-bottom--large
-    :margin-bottom "1.5rem")
+ :margin-bottom "1.5rem")
 
 (.bz-m-vertical--large
-    :margin-top "1.5rem"
-    :margin-bottom "1.5rem")
+ :margin-top "1.5rem"
+ :margin-bottom "1.5rem")
 
 (.bz-m-around--large
-    :margin "1.5rem")
+ :margin "1.5rem")
 
 ;; x-large
 (.bz-m-left--x-large
-    :margin-left "2rem")
+ :margin-left "2rem")
 
 (.bz-m-right--x-large
-    :margin-right "2rem")
+ :margin-right "2rem")
 
 (.bz-m-horizontal--x-large
-    :margin-left "2rem"
-    :margin-right "2rem")
-    
+ :margin-left "2rem"
+ :margin-right "2rem")
+
 (.bz-m-top--x-large
-    :margin-top "2rem")
+ :margin-top "2rem")
 
 (.bz-m-bottom--x-large
-    :margin-bottom "2rem")
+ :margin-bottom "2rem")
 
 (.bz-m-vertical--x-large
-    :margin-top "2rem"
-    :margin-bottom "2rem")
+ :margin-top "2rem"
+ :margin-bottom "2rem")
 
 (.bz-m-around--x-large
-    :margin "2rem")
+ :margin "2rem")
 
 ;; xx-large
 (.bz-m-left--xx-large
-    :margin-left "3rem")
+ :margin-left "3rem")
 
 (.bz-m-right--xx-large
-    :margin-right "3rem")
+ :margin-right "3rem")
 
 (.bz-m-horizontal--xx-large
-    :margin-left "3rem"
-    :margin-right "3rem")
-    
+ :margin-left "3rem"
+ :margin-right "3rem")
+
 (.bz-m-top--xx-large
-    :margin-top "3rem")
+ :margin-top "3rem")
 
 (.bz-m-bottom--xx-large
-    :margin-bottom "3rem")
+ :margin-bottom "3rem")
 
 (.bz-m-vertical--xx-large
-    :margin-top "3rem"
-    :margin-bottom "3rem")
+ :margin-top "3rem"
+ :margin-bottom "3rem")
 
 (.bz-m-around--xx-large
-    :margin "3rem")
+ :margin "3rem")
