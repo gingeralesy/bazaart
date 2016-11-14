@@ -24,6 +24,78 @@
 (.bz-p-around--none
     :padding "0!important")
 
+;; xxx-small
+(.bz-p-left--xxx-small
+    :padding-left "0.125rem")
+
+(.bz-p-right--xxx-small
+    :padding-right "0.125rem")
+
+(.bz-p-horizontal--xxx-small
+    :padding-left "0.125rem"
+    :padding-right "0.125rem")
+    
+(.bz-p-top--xxx-small
+    :padding-top "0.125rem")
+
+(.bz-p-bottom--xxx-small
+    :padding-bottom "0.125rem")
+
+(.bz-p-vertical--xxx-small
+    :padding-top "0.125rem"
+    :padding-bottom "0.125rem")
+
+(.bz-p-around--xxx-small
+    :padding "0.125rem")
+
+;; xx-small
+(.bz-p-left--xx-small
+    :padding-left "0.25rem")
+
+(.bz-p-right--xx-small
+    :padding-right "0.25rem")
+
+(.bz-p-horizontal--xx-small
+    :padding-left "0.25rem"
+    :padding-right "0.25rem")
+    
+(.bz-p-top--xx-small
+    :padding-top "0.25rem")
+
+(.bz-p-bottom--xx-small
+    :padding-bottom "0.25rem")
+
+(.bz-p-vertical--xx-small
+    :padding-top "0.25rem"
+    :padding-bottom "0.25rem")
+
+(.bz-p-around--xx-small
+    :padding "0.25rem")
+
+;; x-small
+(.bz-p-left--x-small
+    :padding-left "0.5rem")
+
+(.bz-p-right--x-small
+    :padding-right "0.5rem")
+
+(.bz-p-horizontal--x-small
+    :padding-left "0.5rem"
+    :padding-right "0.5rem")
+    
+(.bz-p-top--x-small
+    :padding-top "0.5rem")
+
+(.bz-p-bottom--x-small
+    :padding-bottom "0.5rem")
+
+(.bz-p-vertical--x-small
+    :padding-top "0.5rem"
+    :padding-bottom "0.5rem")
+
+(.bz-p-around--x-small
+    :padding "0.5rem")
+
 ;; small
 (.bz-p-left--small
     :padding-left "0.75rem")
@@ -169,6 +241,78 @@
 
 (.bz-m-around--none
     :margin "0!important")
+
+;; xxx-small
+(.bz-m-left--xxx-small
+    :margin-left "0.125rem")
+
+(.bz-m-right--xxx-small
+    :margin-right "0.125rem")
+
+(.bz-m-horizontal--xxx-small
+    :margin-left "0.125rem"
+    :margin-right "0.125rem")
+    
+(.bz-m-top--xxx-small
+    :margin-top "0.125rem")
+
+(.bz-m-bottom--xxx-small
+    :margin-bottom "0.125rem")
+
+(.bz-m-vertical--xxx-small
+    :margin-top "0.125rem"
+    :margin-bottom "0.125rem")
+
+(.bz-m-around--xxx-small
+    :margin "0.125rem")
+
+;; xx-small
+(.bz-m-left--xx-small
+    :margin-left "0.25rem")
+
+(.bz-m-right--xx-small
+    :margin-right "0.25rem")
+
+(.bz-m-horizontal--xx-small
+    :margin-left "0.25rem"
+    :margin-right "0.25rem")
+    
+(.bz-m-top--xx-small
+    :margin-top "0.25rem")
+
+(.bz-m-bottom--xx-small
+    :margin-bottom "0.25rem")
+
+(.bz-m-vertical--xx-small
+    :margin-top "0.25rem"
+    :margin-bottom "0.25rem")
+
+(.bz-m-around--xx-small
+    :margin "0.25rem")
+
+;; x-small
+(.bz-m-left--x-small
+    :margin-left "0.5rem")
+
+(.bz-m-right--x-small
+    :margin-right "0.5rem")
+
+(.bz-m-horizontal--x-small
+    :margin-left "0.5rem"
+    :margin-right "0.5rem")
+    
+(.bz-m-top--x-small
+    :margin-top "0.5rem")
+
+(.bz-m-bottom--x-small
+    :margin-bottom "0.5rem")
+
+(.bz-m-vertical--x-small
+    :margin-top "0.5rem"
+    :margin-bottom "0.5rem")
+
+(.bz-m-around--x-small
+    :margin "0.5rem")
 
 ;; small
 (.bz-m-left--small
