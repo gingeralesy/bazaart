@@ -5,7 +5,8 @@
 (in-package #:bazaart)
 
 (define-route https :reversal (uri)
-  (setf (port uri) 443))
+  (when (string-equal "www.bazaart.net" (domain *request*))
+    (setf (port uri) 443)))
 
 (lquery:define-lquery-function page-template (node object)
   "Adds content from a different template."
