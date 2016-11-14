@@ -12,11 +12,13 @@
     <link rel="stylesheet" type="text/css" href="../static/css/theme.css"
           @href="/static/bazaart/css/theme.css" />
   </head>
-  <body class="bazaart">
+  <body class="bazaart bz-flex bz-flex--column">
     <c:splice lquery="(page-template :fragment/header)"/>
-
-    <div class="content bz-p-around--medium" >
-      Hello, welcome to Bazaart.
+    
+    <div class="content bz-flex bz-flex--column" >
+      <div class="bz-p-around--medium" >
+        Hello, welcome to Bazaart.
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"

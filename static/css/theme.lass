@@ -1,3 +1,7 @@
+(body
+ :min-height "100vh"
+ :width "100vw")
+
 ;; Box
 
 (.bz-box
@@ -447,3 +451,29 @@
 
 (.bz-m-around--xx-large
  :margin "3rem")
+
+;; Grid stuff
+
+(.bz-flex
+ :height "100%"
+ :width "100%"
+ :display "-ms-flexbox"
+ :display "flex"
+ ("> nav"
+  :-ms-flex "0 1 auto"
+  :flex "0 1 auto")
+ ("> *:not(nav):not(footer)"
+  :-ms-flex "1 1 auto"
+  :flex "1 1 auto")
+ ("> footer"
+  :-ms-flex "0 1 40px";
+  :flex "0 1 40px"))
+
+(.bz-flex--column
+ :-ms-flex-align "stretch"
+ :-ms-grid-row-align "stretch"
+ :align-items "stretch"
+ :-ms-flex-line-pack "stretch"
+ :align-content "stretch"
+ :-ms-flex-direction "column"
+ :flex-direction "column")
