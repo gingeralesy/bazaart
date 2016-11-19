@@ -13,7 +13,9 @@
 
   <div class="uk-navbar-flip">
     <ul class="uk-navbar-nav">
-      <li class="uk-parent" data-uk-dropdown='{"mode":"hover"}'>
+      <li class="uk-parent"
+          data-uk-dropdown='{"mode":"hover", "pos":"bottom-right"}'
+          aria-haspopup="true" aria-expanded="false">
         <a href="javascript:void(0);">Username Here</a>
         <div class="uk-dropdown uk-dropdown-navbar"
              aria-hidden="true" tabindex="">

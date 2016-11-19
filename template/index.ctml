@@ -12,11 +12,11 @@
     <link rel="stylesheet" type="text/css" href="../static/css/theme.css"
           @href="/static/bazaart/css/theme.css" />
   </head>
-  <body class="bazaart bz-flex bz-flex--column">
+  <body class="bazaart uk-flex uk-flex-column">
     <c:splice lquery="(page-template :fragment/header)"/>
     
-    <div class="content bz-flex bz-flex--column" >
-      <div class="bz-p-around--medium" >
+    <div class="content uk-flex-item-auto uk-flex uk-flex-column" >
+      <div class="uk-panel uk-panel-space uk-flex-item-auto" >
         Hello, welcome to Bazaart.
       </div>
     </div>
