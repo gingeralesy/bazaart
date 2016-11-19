@@ -1,11 +1,12 @@
 (in-package #:rad-user)
 (define-module #:bazaart
   (:use #:cl #:radiance #:r-clip)
-  (:domain "www.bazaart.net"))
+  (:domain "www.bazaart.net" "bazaart.net"))
 (in-package #:bazaart)
 
 (define-route https :reversal (uri)
-  (when (string-equal "bazaart.net" (domain *request*))
+  (when (or (string-equal "bazaart.net" (domain *request*))
+            (string-equal "www.bazaart.net" (domain *request*)))
     (setf (port uri) 443)))
 
 (lquery:define-lquery-function page-template (node object)
