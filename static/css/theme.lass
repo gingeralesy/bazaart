@@ -1,7 +1,7 @@
 (body
  :min-height "100vh"
  :width "100vw"
- ("> *"
+ ("> .content"
   :max-width "960px"
   :width "100%"
   :margin-left "auto"
@@ -462,13 +462,13 @@
 (.bz-flex
  :display "-ms-flexbox"
  :display "flex"
- ("> nav"
+ ("> .bz-flex--top"
   :-ms-flex "0 1 auto"
   :flex "0 1 auto")
- ("> *:not(nav):not(footer)"
+ ("> *:not(.bz-flex--top):not(.bz-flex--bottom)"
   :-ms-flex "1 1 auto"
   :flex "1 1 auto")
- ("> footer"
+ ("> .bz-flex--bottom"
   :-ms-flex "0 1 40px";
   :flex "0 1 40px"))
 
