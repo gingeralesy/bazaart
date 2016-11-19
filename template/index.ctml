@@ -16,7 +16,7 @@
     <div class="wrap uk-flex uk-flex-column">
       <c:splice lquery="(page-template :fragment/header)"/>
       
-      <div class="content uk-flex-item-auto uk-flex uk-flex-column" >
+      <div class="page-content uk-flex-item-auto uk-flex uk-flex-column" >
         <div class="uk-panel uk-panel-space uk-flex-item-auto" >
           Hello, welcome to Bazaart.
         </div>

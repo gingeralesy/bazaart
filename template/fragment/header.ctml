@@ -1,35 +1,37 @@
 <nav class="uk-navbar uk-navbar-attached">
-  <a href="javascript:void(0);" class="uk-navbar-brand">
-    Bazaart
-  </a>
-  <ul class="uk-navbar-nav">
-    <li class="uk-active">
-      <a href="javascript:void(0);">Home</a>
-    </li>
-    <li>
-      <a href="javascript:void(0);">Featured</a>
-    </li>
-  </ul>
-
-  <div class="uk-navbar-flip">
+  <div class="navbar-content">
+    <a href="javascript:void(0);" class="uk-navbar-brand">
+      Bazaart
+    </a>
     <ul class="uk-navbar-nav">
-      <c:if test="user">
-        <c:then>
-          <c:splice lquery="(page-template :fragment/nav/user-dropdown)"/>
-        </c:then>
-        <c:else>
-          <c:splice lquery="(page-template :fragment/nav/anon-login)"/>
-        </c:else>
-      </c:if>
+      <li class="uk-active">
+        <a href=".">Home</a>
+      </li>
+      <li>
+        <a href="javascript:void(0);">Featured</a>
+      </li>
     </ul>
-  </div>
-  
-  <div class="uk-navbar-content uk-navbar-center uk-hidden-small">
-    <form class="uk-form uk-margin-remove uk-display-inline-block">
-      <input type="text" placeholder="Search"/>
-      <button type="button" class="uk-icon-button">
-        <span class="uk-icon-search"></span>
-      </button>
-    </form>
+
+    <div class="uk-navbar-flip">
+      <ul class="uk-navbar-nav">
+        <c:if test="user">
+          <c:then>
+            <c:splice lquery="(page-template :fragment/nav/user-dropdown)"/>
+          </c:then>
+          <c:else>
+            <c:splice lquery="(page-template :fragment/nav/anon-login)"/>
+          </c:else>
+        </c:if>
+      </ul>
+    </div>
+    
+    <div class="uk-navbar-content uk-navbar-center uk-hidden-small">
+      <form class="uk-form uk-margin-remove uk-display-inline-block uk-width-2-3">
+        <input type="text" placeholder="Search" class="uk-width-5-6"/>
+        <button type="button" class="uk-icon-button">
+          <span class="uk-icon-search"></span>
+        </button>
+      </form>
+    </div>
   </div>
 </nav>
