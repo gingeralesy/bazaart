@@ -4,10 +4,22 @@
   (:domain "bazaart"))
 (in-package #:bazaart)
 
-(define-route https :reversal (uri)
-  (when (or (string-equal "bazaart.net" (domain *request*))
-            (string-equal "www.bazaart.net" (domain *request*)))
-    (setf (port uri) 443)))
+(defparameter *outside-domain* "bazaart.net")
+
+(define-route default (:mapping -100) (uri)
+  (unless (module-p (first (domains uri)))
+    (push "bazaart" (domains uri))))
+
+(define-route default (:reversal -100) (uri)
+  (when (string= "bazaart" (first (domains uri)))
+    (pop (domains uri))))
+
+(define-route https (:reversal -200) (uri)
+  (let ((req-domain (domain *request*))
+        (out-domain *outside-domain*))
+    (when (string= out-domain req-domain
+                   :start2 (max 0 (- (length req-domain) (length out-domain))))
+      (setf (port uri) 443))))
 
 (lquery:define-lquery-function page-template (node object)
   "Adds content from a different template."
@@ -15,7 +27,6 @@
   (plump:parse (template (format NIL "~(~a~).ctml" object)) :root node)
   node)
 
-(define-page index #@"/" (:lquery (template "index.ctml"))
+(define-page index #@"bazaart/" (:lquery (template "index.ctml"))
   "Main page."
   (r-clip:process T))
-
