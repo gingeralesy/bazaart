@@ -1,16 +1,9 @@
 <nav class="uk-navbar uk-navbar-attached">
   <div class="navbar-content">
-    <a href="javascript:void(0);" class="uk-navbar-brand">
+    <a href="." class="uk-navbar-brand">
+      <i class="fa fa-paint-brush"></i>
       Bazaart
     </a>
-    <ul class="uk-navbar-nav">
-      <li class="uk-active">
-        <a href=".">Home</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);">Featured</a>
-      </li>
-    </ul>
 
     <div class="uk-navbar-flip">
       <ul class="uk-navbar-nav">
