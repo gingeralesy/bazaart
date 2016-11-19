@@ -1,4 +1,4 @@
-<nav class="uk-navbar">
+<nav class="uk-navbar uk-navbar-attached">
   <a href="javascript:void(0);" class="uk-navbar-brand">
     Bazaart
   </a>
