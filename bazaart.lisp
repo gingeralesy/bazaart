@@ -4,6 +4,8 @@
   (:domain "bazaart"))
 (in-package #:bazaart)
 
+;; -- move the parameter and routes below to the startup script as these are
+;;    server specific configurations
 (defparameter *outside-domain* "bazaart.net")
 
 (define-route default (:mapping -100) (uri)
@@ -20,6 +22,7 @@
     (when (string= out-domain req-domain
                    :start2 (max 0 (- (length req-domain) (length out-domain))))
       (setf (port uri) 443))))
+;; keep the stuff from here on --
 
 (lquery:define-lquery-function page-template (node object)
   "Adds content from a different template."
