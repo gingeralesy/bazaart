@@ -1,7 +1,7 @@
 (in-package #:rad-user)
 (define-module #:bazaart
   (:use #:cl #:radiance #:r-clip)
-  (:domain "bazaart.net"))
+  (:domain "bazaart"))
 (in-package #:bazaart)
 
 (define-route https :reversal (uri)
