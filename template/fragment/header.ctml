@@ -9,10 +9,37 @@
       <ul class="uk-navbar-nav">
         <c:if test="user">
           <c:then>
-            <c:splice lquery="(page-template :fragment/nav/user-dropdown)"/>
+            <li class="uk-parent"
+                data-uk-dropdown='{"mode":"hover", "pos":"bottom-right"}'
+                aria-haspopup="true" aria-expanded="false">
+              <a href="javascript:void(0);">Username Here</a>
+              <div class="uk-dropdown uk-dropdown-navbar"
+                   aria-hidden="true" tabindex="">
+                <ul class="uk-nav uk-nav-navbar">
+                  <li class="uk-nav-header">
+                    Username Here
+                  </li>
+                  <li class="uk-nav-divider"></li>
+                  <li>
+                    <a href="javascript:void(0);">My Shop</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">Settings</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
           </c:then>
           <c:else>
-            <c:splice lquery="(page-template :fragment/nav/anon-login)"/>
+            <li>
+              <a href="javascript:void(0);">Set Up Shop</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">Create Account</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">Sign In</a>
+            </li>
           </c:else>
         </c:if>
       </ul>
