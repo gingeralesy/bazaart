@@ -1,7 +1,7 @@
 <nav class="uk-navbar uk-navbar-attached">
   <div class="navbar-content">
     <a href="." class="uk-navbar-brand">
-      <i class="fa fa-paint-brush"></i>
+      <span class="uk-icon-paint-brush"></span>
       Bazaart
     </a>
 
@@ -46,11 +46,9 @@
     </div>
     
     <div class="uk-navbar-content uk-navbar-center uk-hidden-small">
-      <form class="uk-form uk-margin-remove uk-display-inline-block uk-width-2-3">
-        <input type="text" placeholder="Search" class="uk-width-5-6"/>
-        <button type="button" class="uk-icon-button">
-          <span class="uk-icon-search"></span>
-        </button>
+      <form class="uk-form uk-form-icon uk-margin-remove uk-display-inline-block uk-width-2-3">
+        <span class="uk-icon-search"></span>
+        <input type="text" placeholder="Search" class="uk-form-width-large"/>
       </form>
     </div>
   </div>
