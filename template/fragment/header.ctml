@@ -1,39 +1,80 @@
 <nav class="uk-navbar uk-navbar-attached">
   <div class="navbar-content">
     <a href="." class="uk-navbar-brand">
-      <span class="uk-icon-paint-brush"></span>
+      <span class="uk-icon-paint-brush" aria-hidden="true"></span>
       Bazaart
     </a>
 
     <div class="uk-navbar-flip">
-      <ul class="uk-navbar-nav">
-        <c:if test="user">
-          <c:then>
-            <li class="uk-parent"
-                data-uk-dropdown='{"mode":"hover", "pos":"bottom-right"}'
-                aria-haspopup="true" aria-expanded="false">
-              <a href="javascript:void(0);">Username Here</a>
-              <div class="uk-dropdown uk-dropdown-navbar"
-                   aria-hidden="true" tabindex="">
-                <ul class="uk-nav uk-nav-navbar">
+      <!-- Small window view -->
+      <ul class="uk-navbar-nav uk-visible-small">
+        <li class="uk-parent" data-uk-dropdown="{pos:'bottom-right'}" aria-haspopup="true" aria-expanded="false">
+          <a href="javascript:void(0);" title="Menu">
+            <span class="uk-icon-bars" aria-hidden="true"></span>
+          </a>
+          <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-top" aria-hidden="true" tabindex="">
+            <ul class="uk-nav uk-nav-navbar">
+              <c:if test="user">
+                <c:then>
                   <li class="uk-nav-header">
-                    Username Here
+                    Username
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <span class="uk-icon-home" aria-hidden="true"></span>
+                      My Shop
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <span class="uk-icon-cog" aria-hidden="true"></span>
+                      Settings
+                    </a>
+                  </li>
+                </c:then>
+                <c:else>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <span class="uk-icon-home" aria-hidden="true"></span>
+                      Set Up Shop
+                    </a>
                   </li>
                   <li class="uk-nav-divider"></li>
                   <li>
-                    <a href="javascript:void(0);">My Shop</a>
+                    <a href="javascript:void(0);">
+                      <span class="uk-icon-user" aria-hidden="true"></span>
+                      Create Account
+                    </a>
                   </li>
                   <li>
-                    <a href="javascript:void(0);">Settings</a>
+                    <a href="javascript:void(0);">
+                      <span class="uk-icon-sign-in" aria-hidden="true"></span>
+                      Sign In
+                    </a>
                   </li>
-                </ul>
-              </div>
+                </c:else>
+              </c:if>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      
+      <!-- Large window view -->
+      <ul class="uk-navbar-nav uk-hidden-small">
+        <c:if test="user">
+          <c:then>
+            <li>
+              <a href="javascript:void(0);">My Shop</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">Settings</a>
             </li>
           </c:then>
           <c:else>
             <li>
               <a href="javascript:void(0);">Set Up Shop</a>
             </li>
+            <li class="uk-nav-divider"></li>
             <li>
               <a href="javascript:void(0);">Create Account</a>
             </li>
@@ -44,12 +85,14 @@
         </c:if>
       </ul>
     </div>
-    
-    <div class="uk-navbar-content uk-navbar-center uk-hidden-small">
-      <form class="uk-form uk-form-icon uk-margin-remove uk-display-inline-block uk-width-2-3">
-        <span class="uk-icon-search"></span>
-        <input type="text" placeholder="Search" class="uk-form-width-large"/>
-      </form>
-    </div>
+
+    <c:unless test="no-search">
+      <div class="uk-navbar-content uk-navbar-center uk-hidden-small">
+        <form class="uk-form uk-form-icon uk-margin-remove uk-display-inline-block uk-width-2-3">
+          <span class="uk-icon-search" aria-hidden="true"></span>
+          <input type="text" placeholder="Search" class="uk-form-width-large"/>
+        </form>
+      </div>
+    </c:unless>
   </div>
 </nav>
