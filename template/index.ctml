@@ -15,7 +15,6 @@
     <meta property="og:locale" content="en_GB"/>
     
     <meta name="description" content="Discover artist to create pieces you've long wished to see.">
-    <meta name="author" content="Janne Pakarinen <gingeralesy@gmail.com>">
 
     <link rel="stylesheet" type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.1/css/uikit.almost-flat.min.css" />
