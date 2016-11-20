@@ -87,8 +87,8 @@
     </div>
 
     <c:unless test="no-search">
-      <div class="uk-navbar-content uk-navbar-center uk-hidden-small">
-        <form class="uk-form uk-form-icon uk-margin-remove uk-display-inline-block uk-width-2-3">
+      <div class="uk-navbar-content uk-float-right uk-width-1-3 uk-width-large-1-2 uk-hidden-small">
+        <form class="uk-form uk-form-icon uk-margin-remove uk-width-9-10">
           <span class="uk-icon-search" aria-hidden="true"></span>
           <input type="text" placeholder="Search" class="uk-form-width-large"/>
         </form>
