@@ -26,80 +26,25 @@
       <c:splice lquery="(page-template :fragment/header)"/>
       
       <main class="page-content uk-flex-item-auto uk-flex uk-flex-column">
-        <c:if test="query">
-          <c:then>Yes</c:then>
-          <c:else>No</c:else>
-        <c:if>
+        <div class="uk-panel uk-panel-space uk-flex-item-auto">
+          <c:if test="results">
+            <c:then>
+              <div id="search-results" iterate="results">
+                <div class="search-result" lquery="(text *)">
+                  <!-- Make something of the result here. -->
+                </div>
+              </div>
+            </c:then>
+            <c:else>
+              <div id="search-results">
+                No results for '<c:splice lquery="(text query)"/>' were found.
+              </div>
+            </c:else>
+          </c:if>
+        </div>
       </main>
 
-      <footer class="uk-block uk-block-secondary uk-contrast bz-p-top--small bz-p-bottom--large bz-p-horizontal--large">
-        <div class="navbar-content uk-grid">
-          <div class="uk-panel uk-width-1-5">
-            <h3 class="uk-panel-title">
-              Title
-            </h3>
-            <ul class="uk-list">
-              <li>
-                <a href="javascript:void(0);">Link</a>
-              </li>
-              <li>
-                <a href="javascript:void(0);">Link</a>
-              </li>
-              <li>
-                <a href="javascript:void(0);">Link</a>
-              </li>
-            </ul>
-          </div>
-          <div class="uk-panel uk-width-1-5">
-            <h3 class="uk-panel-title">
-              Title
-            </h3>
-            <ul class="uk-list">
-              <li>
-                <a href="javascript:void(0);">Link</a>
-              </li>
-              <li>
-                <a href="javascript:void(0);">Link</a>
-              </li>
-              <li>
-                <a href="javascript:void(0);">Link</a>
-              </li>
-            </ul>
-          </div>
-          <div class="uk-panel uk-width-1-5">
-            <h3 class="uk-panel-title">
-              Title
-            </h3>
-            <ul class="uk-list">
-              <li>
-                <a href="javascript:void(0);">Link</a>
-              </li>
-              <li>
-                <a href="javascript:void(0);">Link</a>
-              </li>
-              <li>
-                <a href="javascript:void(0);">Link</a>
-              </li>
-            </ul>
-          </div>
-          <div class="uk-panel uk-width-1-5 uk-push-1-5">
-            <h3 class="uk-panel-title uk-text-nowrap">
-              Powered by
-            </h3>
-            <ul class="uk-list">
-              <li>
-                <a href="javascript:void(0);">Link</a>
-              </li>
-              <li>
-                <a href="javascript:void(0);">Link</a>
-              </li>
-              <li>
-                <a href="javascript:void(0);">Link</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+      <c:splice lquery="(page-template :fragment/footer)"/>
     </div>
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"

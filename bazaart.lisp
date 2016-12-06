@@ -36,4 +36,4 @@
 
 (define-page search "bazaart/search" (:lquery (template "search.ctml"))
   "Search page."
-  (r-clip:process T :query (get-var "query")))
+  (r-clip:process T :query (get-var "query") :results NIL))
