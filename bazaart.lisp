@@ -30,6 +30,10 @@
   (plump:parse (template (format NIL "~(~a~).ctml" object)) :root node)
   node)
 
-(define-page index #@"bazaart/" (:lquery (template "index.ctml"))
+(define-page index "bazaart/$" (:lquery (template "index.ctml"))
   "Main page."
   (r-clip:process T))
+
+(define-page search "bazaart/search" (:lquery (template "search.ctml"))
+  "Search page."
+  (r-clip:process T :query (get-var "query")))

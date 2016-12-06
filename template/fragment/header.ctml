@@ -88,9 +88,13 @@
 
     <c:unless test="no-search">
       <div class="uk-navbar-content uk-float-right uk-width-1-3 uk-width-large-1-2 uk-hidden-small">
-        <form class="uk-form uk-form-icon uk-margin-remove uk-width-9-10">
+        <form class="uk-form uk-form-icon uk-margin-remove uk-width-9-10" method="get" action="/search" @action="bazaart/search">
           <span class="uk-icon-search" aria-hidden="true"></span>
-          <input type="text" placeholder="Search" class="uk-form-width-large"/>
+          <input type="text" placeholder="Search" name="query" class="uk-form-width-large"
+                 lquery="(val query)"/>
+          <div class="uk-hidden">
+            <input type="submit" name="action" value="Search"/>
+          </div>
         </form>
       </div>
     </c:unless>
